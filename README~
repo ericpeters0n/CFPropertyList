@@ -11,7 +11,19 @@ You could either use ruby gems and install it via
 
 or you could clone this repository and place it somewhere in your load path.
 
-Eric's Updated README...
+== Example
+  require 'cfpropertylist'
+
+  # create a arbitrary data structure of basic data types
+  data = {
+    'name' => 'John Doe',
+    'missing' => true,
+    'last_seen' => Time.now,
+    'friends' => ['Jane Doe','Julian Doe'],
+    'likes' => {
+      'me' => false
+    }
+  }
 
   # create CFPropertyList::List object
   plist = CFPropertyList::List.new
