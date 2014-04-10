@@ -1,11 +1,18 @@
 Gem::Specification.new do |s|
-  s.name        = 'cfpropertylist'
-  s.version     = '0.0.1'
-  s.date        = '2014-04-08'
-  s.summary     = "CFPropertyList"
-  s.description = "import read binary or xml plists"
-  s.authors     = ["Eric Peterson"]
-  s.email       = 'eric@links.ee'
-  s.files       = ["lib/cfpropertylist.rb"]
-  s.license       = 'MIT'
+  s.name = "CFPropertyList"
+  s.version = "2.2.8"
+  s.author = "Christian Kruse"
+  s.email = "cjk@wwwtech.de"
+  s.homepage = "http://github.com/ckruse/CFPropertyList"
+  s.license = 'MIT'
+  s.platform = Gem::Platform::RUBY
+  s.summary = "Read, write and manipulate both binary and XML property lists as defined by apple"
+  s.description = "This is a module to read, write and manipulate both binary and XML property lists as defined by apple."
+  s.files = FileList["lib/**/*"].to_a
+  s.require_path = "lib"
+  #s.autorequire = "name"
+  #s.test_files = FileList["{test}/**/*test.rb"].to_a
+  s.has_rdoc = true
+  s.extra_rdoc_files = ["README"]
+  s.add_development_dependency("rake",">=0.7.0")
 end
