@@ -1,3 +1,4 @@
+require 'rake'
 Gem::Specification.new do |s|
   s.name = "CFPropertyList"
   s.version = "2.2.8"
